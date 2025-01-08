@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Rafi\\Desktop\\OpenGL-Project-Common-Room\\Main Project\\",
+  "WorkspaceRootPath": "C:\\Users\\USER\\Desktop\\OpenGL-Project-Common-Room\\Main Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AE3CB1F8-1F26-45D0-BB8F-43EF5D0BC153}|Lab9_Lighting.vcxproj|C:\\Users\\Rafi\\Desktop\\OpenGL-Project-Common-Room\\Main Project\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{AE3CB1F8-1F26-45D0-BB8F-43EF5D0BC153}|Lab9_Lighting.vcxproj|C:\\Users\\USER\\Desktop\\OpenGL-Project-Common-Room\\Main Project\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{AE3CB1F8-1F26-45D0-BB8F-43EF5D0BC153}|Lab9_Lighting.vcxproj|solutionrelative:main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
@@ -20,13 +20,13 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "main.cpp",
-              "DocumentMoniker": "C:\\Users\\Rafi\\Desktop\\OpenGL-Project-Common-Room\\Main Project\\main.cpp",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\OpenGL-Project-Common-Room\\Main Project\\main.cpp",
               "RelativeDocumentMoniker": "main.cpp",
-              "ToolTip": "C:\\Users\\Rafi\\Desktop\\OpenGL-Project-Common-Room\\Main Project\\main.cpp*",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\OpenGL-Project-Common-Room\\Main Project\\main.cpp*",
               "RelativeToolTip": "main.cpp*",
-              "ViewState": "AgIAAJ8BAAAAAAAAAAAAAMYBAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAHwCAAAAAAAAAAAAAIsCAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-01-08T04:41:55.761Z",
+              "WhenOpened": "2025-01-08T16:43:58.87Z",
               "EditorCaption": ""
             }
           ]

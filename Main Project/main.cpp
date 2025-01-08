@@ -1,9 +1,9 @@
-//
-//  main.cpp
-//  3D Object Drawing
-//
-//  Created by Waliul Islam Sumon
-//
+// main.cpp
+// 3D Common Room
+// Designed by:
+// Md Raduan Kabir (20201045) 
+// Sheikh Nafis Ul Alam(20201056)
+// Md Monem Shariar Rafi (20201058)
 
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
@@ -18,7 +18,7 @@
 #include "directionalLight.h"
 #include "sphere.h"
 
-#include <iostream>
+#include <iostream>a
 
 using namespace std;
 
@@ -51,8 +51,8 @@ float scale_Y = 1.0;
 float scale_Z = 1.0;
 
 // camera
+Camera camera(glm::vec3(4.0f, 4.0f, 2.0f));
 
-Camera camera(glm::vec3(3.5f, 3.5f, 3.0f));
 
 float lastX = SCR_WIDTH / 2.0f;
 float lastY = SCR_HEIGHT / 2.0f;
@@ -66,10 +66,10 @@ DirectionalLight directionalLight(-directionalLight_direction, glm::vec4(0.2f, 0
 
 // positions of the point lights
 glm::vec3 pointLightPositions[] = {
-    glm::vec3(-2.0f,  1.2f,  1.0f),
-    glm::vec3(3.0f,  1.2f,  1.0f),
-    glm::vec3(3.0f,  1.2f,  3.0f),
-    glm::vec3(-2.0f,  1.2f,  3.0f)
+    glm::vec3(-2.0f,  1.4f,  1.0f),
+    glm::vec3(3.0f,  1.4f,  1.0f),
+    glm::vec3(3.0f,  1.4f,  3.0f),
+    glm::vec3(-2.0f,  1.4f,  3.0f)
 };
 
 PointLight pointlight1(
@@ -146,7 +146,7 @@ int main()
 
     // glfw window creation
     // --------------------
-    GLFWwindow* window = glfwCreateWindow(SCR_WIDTH, SCR_HEIGHT, "CSE 4208: Computer Graphics Laboratory", NULL, NULL);
+    GLFWwindow* window = glfwCreateWindow(SCR_WIDTH, SCR_HEIGHT, "Titans - Common Room", NULL, NULL);
     if (window == NULL)
     {
         std::cout << "Failed to create GLFW window" << std::endl;
@@ -421,35 +421,37 @@ int main()
 
 
 //-------------------------------------------------------walls----------------------------------------------------------------
-    //Drawing a cube bottom wall
+    //Drawing a cube bottom wall (Floor)
         translateMatrix = glm::translate(identityMatrix, glm::vec3(-3.7f, -0.7f, 0.0f));
         scaleMatrix = glm::scale(identityMatrix, glm::vec3(7.5f, 0.2f, 3.8f));
         model = translateMatrix * scaleMatrix;
-        drawCube(cubeVAO, lightingShader, model, 0.6f, 0.6f, 0.7f);
+        drawCube(cubeVAO, lightingShader, model, 0.96f, 0.87f, 0.70f);
+
 
         //Drawing a cube right wall
         translateMatrix = glm::translate(identityMatrix, glm::vec3(-3.7f, -0.7f, 0.0f));
         scaleMatrix = glm::scale(identityMatrix, glm::vec3(7.5f, 2.1f, 0.2f));
         model = translateMatrix * scaleMatrix;
-        drawCube(cubeVAO, lightingShader, model, 0.7f, 0.8f, 0.9f);
+        drawCube(cubeVAO, lightingShader, model, 0.55f, 0.54f, 0.42f);
 
         //Drawing a cube front wall
         translateMatrix = glm::translate(identityMatrix, glm::vec3(-3.7f, -0.7f, 0.0f));
         scaleMatrix = glm::scale(identityMatrix, glm::vec3(0.2f, 2.1f, 3.8f));
         model = translateMatrix * scaleMatrix;
-        drawCube(cubeVAO, lightingShader, model, 0.7f, 0.8f, 0.9f);
+        drawCube(cubeVAO, lightingShader, model, 0.55f, 0.54f, 0.42f);
 
         //Drawing a cube left wall
         translateMatrix = glm::translate(identityMatrix, glm::vec3(-3.7f, -0.7f, 3.8f));
-        scaleMatrix = glm::scale(identityMatrix, glm::vec3(7.5f, 2.1f, 0.2f));
+        scaleMatrix = glm::scale(identityMatrix, glm::vec3(7.6f, 2.1f, 0.2f));
         model = translateMatrix * scaleMatrix;
-        drawCube(cubeVAO, lightingShader, model, 0.7f, 0.8f, 0.9f);
+        drawCube(cubeVAO, lightingShader, model, 0.55f, 0.54f, 0.42f);
 
         //Drawing a cube back wall
         translateMatrix = glm::translate(identityMatrix, glm::vec3(3.7, -0.7f, 0.0f));
         scaleMatrix = glm::scale(identityMatrix, glm::vec3(0.2f, 2.1f, 3.8f));
         model = translateMatrix * scaleMatrix;
-        drawCube(cubeVAO, lightingShader, model, 0.7f, 0.8f, 0.9f);
+        drawCube(cubeVAO, lightingShader, model, 0.55f, 0.54f, 0.42f);
+
 
         //---------------------------------------------------------walls-----------------------------------------------------------------
 
@@ -458,14 +460,13 @@ int main()
 
 
 
-
-        //----------------------------------------------One Table Set----------------------------------------------------------
-            //Drawing a table
+        //----------------------------------------------First Table Set----------------------------------------------------------
+        //Drawing a table
         translateMatrix = glm::translate(identityMatrix, glm::vec3(1.8f, 0.0f, 0.4f));
         scaleMatrix = glm::scale(identityMatrix, glm::vec3(1.0f, 0.05f, 2.0f));
         model = translateMatrix * scaleMatrix;
         //r    g     b      values
-        drawCube(cubeVAO, lightingShader, model, 1.0f, 1.0f, 1.0f);
+        drawCube(cubeVAO, lightingShader, model, 1.0f, 1.0f, 1.0f);//white
 
         //Bench leg front right
         translateMatrix = glm::translate(identityMatrix, glm::vec3(1.81f, -0.5f, 0.41f));
@@ -496,6 +497,11 @@ int main()
         drawCube(cubeVAO, lightingShader, model, 0.3f, 0.3f, 0.3f);
 
 
+        
+
+
+
+
 
 
 
@@ -503,15 +509,13 @@ int main()
         translateMatrix = glm::translate(identityMatrix, glm::vec3(2.9, -0.2f, 1.6f));
         scaleMatrix = glm::scale(identityMatrix, glm::vec3(0.27f, -0.3f, 0.3f));
         model = translateMatrix * scaleMatrix;
-        drawCube(cubeVAO, lightingShader, model, 0.85f, 0.65f, 0.20f);
+        drawCube(cubeVAO, lightingShader, model, 0.80f, 0.52f, 0.25f);
+
         //Drawing a cube left chair back rest
         translateMatrix = glm::translate(identityMatrix, glm::vec3(3.15, -0.2f, 1.6f));
         scaleMatrix = glm::scale(identityMatrix, glm::vec3(0.02f, 0.4f, 0.3f));
         model = translateMatrix * scaleMatrix;
-        drawCube(cubeVAO, lightingShader, model, 0.85f, 0.65f, 0.20f);
-
-
-
+        drawCube(cubeVAO, lightingShader, model, 0.80f, 0.52f, 0.25f);
 
 
         //Drawing a right chair seat 
@@ -524,37 +528,171 @@ int main()
         scaleMatrix = glm::scale(identityMatrix, glm::vec3(0.02f, 0.4f, 0.3f));
         model = translateMatrix * scaleMatrix;
         drawCube(cubeVAO, lightingShader, model, 0.85f, 0.65f, 0.20f);
-        //----------------------------------------------One Table----------------------------------------------------------
+
+        //----------------------------------------------First Table Set----------------------------------------------------------
 
 
+
+
+
+        //----------------------------------------------Second Table Set----------------------------------------------------------
+        //Drawing a table
+        translateMatrix = glm::translate(identityMatrix, glm::vec3(-0.7f, 0.0f, 0.4f));
+        scaleMatrix = glm::scale(identityMatrix, glm::vec3(1.0f, 0.05f, 2.0f));
+        model = translateMatrix * scaleMatrix;
+        //r    g     b      values
+        drawCube(cubeVAO, lightingShader, model, 1.0f, 1.0f, 1.0f);
+
+        //Bench leg front right
+        translateMatrix = glm::translate(identityMatrix, glm::vec3(-0.71f, -0.5f, 0.41f));
+        scaleMatrix = glm::scale(identityMatrix, glm::vec3(0.05f, 0.5f, 0.05f));
+        model = translateMatrix * scaleMatrix;
+        //r    g     b      values
+        drawCube(cubeVAO, lightingShader, model, 0.3f, 0.3f, 0.3f);
+
+        //Bench leg back right
+        translateMatrix = glm::translate(identityMatrix, glm::vec3(-0.71f, -0.5f, 2.34f));
+        scaleMatrix = glm::scale(identityMatrix, glm::vec3(0.05f, 0.5f, 0.05f));
+        model = translateMatrix * scaleMatrix;
+        //r    g     b      values
+        drawCube(cubeVAO, lightingShader, model, 0.3f, 0.3f, 0.3f);
+
+        //Bench leg front left
+        translateMatrix = glm::translate(identityMatrix, glm::vec3(0.25f, -0.5f, 2.33f));
+        scaleMatrix = glm::scale(identityMatrix, glm::vec3(0.05f, 0.5f, 0.05f));
+        model = translateMatrix * scaleMatrix;
+        //r    g     b      values
+        drawCube(cubeVAO, lightingShader, model, 0.3f, 0.3f, 0.3f);
+
+        //Bench leg back left
+        translateMatrix = glm::translate(identityMatrix, glm::vec3(0.25f, -0.5f, 0.41f));
+        scaleMatrix = glm::scale(identityMatrix, glm::vec3(0.05f, 0.5f, 0.05f));
+        model = translateMatrix * scaleMatrix;
+        //r    g     b      values
+        drawCube(cubeVAO, lightingShader, model, 0.3f, 0.3f, 0.3f);
+
+
+
+
+
+        //Drawing a left chair seat 
+        translateMatrix = glm::translate(identityMatrix, glm::vec3(0.4, -0.2f, 1.6f));
+        scaleMatrix = glm::scale(identityMatrix, glm::vec3(0.27f, -0.3f, 0.3f));
+        model = translateMatrix * scaleMatrix;
+        drawCube(cubeVAO, lightingShader, model, 0.85f, 0.65f, 0.20f);
+        //Drawing a cube left chair back rest
+        translateMatrix = glm::translate(identityMatrix, glm::vec3(0.65, -0.2f, 1.6f));
+        scaleMatrix = glm::scale(identityMatrix, glm::vec3(0.02f, 0.4f, 0.3f));
+        model = translateMatrix * scaleMatrix;
+        drawCube(cubeVAO, lightingShader, model, 0.85f, 0.65f, 0.20f);
+
+
+
+
+
+
+        //Drawing a right chair seat 
+        translateMatrix = glm::translate(identityMatrix, glm::vec3(0.4, -0.2f, 0.8f));
+        scaleMatrix = glm::scale(identityMatrix, glm::vec3(0.27f, -0.3f, 0.3f));
+        model = translateMatrix * scaleMatrix;
+        drawCube(cubeVAO, lightingShader, model, 0.80f, 0.52f, 0.25f);
+        //Drawing a cube right chair back rest
+        translateMatrix = glm::translate(identityMatrix, glm::vec3(0.65, -0.2f, 0.8f));
+        scaleMatrix = glm::scale(identityMatrix, glm::vec3(0.02f, 0.4f, 0.3f));
+        model = translateMatrix * scaleMatrix;
+        drawCube(cubeVAO, lightingShader, model, 0.80f, 0.52f, 0.25f);
+        //----------------------------------------------Second Table Set----------------------------------------------------------
+
+
+//----------------------------------------Drawing a door--------------------------------------------------------------------
+        //Drawing a Door Surface
+        translateMatrix = glm::translate(identityMatrix, glm::vec3(3.69f, -0.5f, 2.8f));
+        scaleMatrix = glm::scale(identityMatrix, glm::vec3(0.05f, 1.4f, 0.8f));
+        model = translateMatrix * scaleMatrix;
+        //r    g     b      values
+        drawCube(cubeVAO, lightingShader, model, 0.55f, 0.27f, 0.07f);
+
+
+
+
+
+        //Drawing a door round handle
+        Sphere sphere2 = Sphere();
+                         //r    g     b      values
+        sphere2.setColor(0.75f, 0.75f, 0.75f);
+        translateMatrix = glm::translate(identityMatrix, glm::vec3(3.65f, 0.3f, 3.5f));
+        scaleMatrix = glm::scale(identityMatrix, glm::vec3(0.04f, 0.04f, 0.04f));
+        model = translateMatrix * scaleMatrix;
+        sphere2.drawSphere(lightingShader, model);
+
+//----------------------------------------Drawing a door--------------------------------------------------------------------
 
 
 
 
         //----------------------------------Teachers Table & White Board--------------------------------------------------------
-                //Drawing a cube teacher's table 
+        //Drawing a cube teacher's table 
         translateMatrix = glm::translate(identityMatrix, glm::vec3(-3.0f, -0.6f, 0.5f));
         scaleMatrix = glm::scale(identityMatrix, glm::vec3(0.8f, 0.7f, 1.2f));
         model = translateMatrix * scaleMatrix;
-        drawCube(cubeVAO, lightingShader, model, 0.95f, 0.9f, 0.8f);
+        drawCube(cubeVAO, lightingShader, model, 0.0f, 0.42f, 0.0f);
 
 
-        //Screen
+        //Drawing a red circle
+        Sphere sphere1 = Sphere();
+        //r    g     b      values
+        sphere1.setColor(0.88f, 0.0f, 0.0f);
+        translateMatrix = glm::translate(identityMatrix, glm::vec3(-2.6f, 0.1f, 1.05f));
+        scaleMatrix = glm::scale(identityMatrix, glm::vec3(0.3f, 0.01f, 0.3f));
+        model = translateMatrix * scaleMatrix;
+        sphere1.drawSphere(lightingShader, model);
+
+        // Book on top of the table
+        translateMatrix = glm::translate(identityMatrix, glm::vec3(-2.8f, 0.1f, 1.4f));
+        scaleMatrix = glm::scale(identityMatrix, glm::vec3(0.3f, 0.05f, 0.2f));
+        model = translateMatrix * scaleMatrix;
+        //r    g     b      values (Red color for the book)
+        drawCube(cubeVAO, lightingShader, model, 1.0f, 1.0f, 0.4f);
+
+
+
+
+
+
+        //White Board
         translateMatrix = glm::translate(identityMatrix, glm::vec3(-3.54f, 0.2f, 1.4f));
         scaleMatrix = glm::scale(identityMatrix, glm::vec3(0.08f, 1.1f, 2.0f));
         model = translateMatrix * scaleMatrix;
         drawCube(cubeVAO, lightingShader, model, 0.95f, 0.95f, 0.95f);
+
+
+
+
+    
+        float rotationAngle = 90.0; // Rotate by 45 degrees
+
+        // Define the rotation axis (e.g., rotate around the y-axis)
+        glm::vec3 rotationAxis = glm::vec3(0.0f, 1.0f, 0.0f); // Rotate around the y-axis
+
+        // Apply transformations
+        translateMatrix = glm::translate(identityMatrix, glm::vec3(-3.45f, 0.5f, 2.9f));
+        scaleMatrix = glm::scale(identityMatrix, glm::vec3(1.0f, 0.7f, 0.02f));
+        glm::mat4 rotateMatrix = glm::rotate(identityMatrix, glm::radians(rotationAngle), rotationAxis);
+
+        // Combine transformations: Translation -> Rotation -> Scaling
+        model = translateMatrix * rotateMatrix * scaleMatrix;
+
+        // Draw the triangle
+        drawTriangle(triangleVAO, lightingShader, model, 0.53f, 0.81f, 0.92f);
+
+
+
         //----------------------------------Teachers Table & White Board--------------------------------------------------------
 
 
 
 
-                // Also draw the lamp object(s)
-                // The white cubes are lamp objects
-                // As we can't see the point where the point lights are, we are representing the points with the white cubes
-                // We don't need the lighting effects on the cubes, that's why we are using simple shader, with only one color element
-                // fragmentShader.fs and vertexShader.fs are the simple shaders codes. 
-                // SEE THESE TWO FILES!
+        
         ourShader.use();
         ourShader.setMat4("projection", projection);
         ourShader.setMat4("view", view);
@@ -640,6 +778,13 @@ void processInput(GLFWwindow* window)
 
 }
 
+
+
+//0 - Directional Light
+//1 - Point Light
+//2 - Specular Light
+//3 - Diffuse Light
+//4 - Directional Light
 void key_callback(GLFWwindow* window, int key, int scancode, int action, int mods)
 {
     if (key == GLFW_KEY_0 && action == GLFW_PRESS)
