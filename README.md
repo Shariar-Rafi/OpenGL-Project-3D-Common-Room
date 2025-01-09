@@ -9,6 +9,13 @@ This project is a practical demonstration of 3D graphics programming, highlighti
 - Realistic lighting effects (ambient, diffuse, and specular).
 - Properly scaled and positioned 3D objects like tables, chairs, and walls etc.
 
+
+## **Overview**
+- <a href="https://github.com/Shariar-Rafi">Md Monem Shariar Rafi<a/>
+- <a href="">Md Monem Shariar Rafi<a/>
+- <a href="">Md Monem Shariar Rafi<a/>
+
+
 ## **Screenshots**
 <img src="https://github.com/Shariar-Rafi/OpenGL-Project-3D-Common-Room/blob/main/Screenshots/Screenshot_1.png" alt="Screenshots/Screenshot_1.png" >
 <img src="https://github.com/Shariar-Rafi/OpenGL-Project-3D-Common-Room/blob/main/Screenshots/Screenshot_2.png" alt="Screenshots/Screenshot_2.png" >
