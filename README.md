@@ -68,8 +68,8 @@ Ensure the following are installed on your system:
 3. Double click on **Lab9_Lighting.sln** file & open with Visual Studio
 4. Right click on **Lab9_Lighting** & go to _Properties_
 5. Go to _VC++ Directories_
-6. Now click on _Include Directories_ click on _<Edit...>_ and add the include which is also located in this repositorie's "opengl"*>*All Config Files** folder.
-7. Also click on _Library Directories_ click on _<Edit...>_ and add the lib which is also located in this repositorie's "opengl">**All Config Files** folder.
-8. Now close the _Lab9_Lighting Properties Pages_ window & right click on **Source Files** folder and click on _Add_ then _Existing Item..._
-9. Then add the **glad.c** file which is also located in this repositorie's All Config Files** folder.
-10. Now _build_ and run the solution on your _Visual Studio_ & enjoy!
+6. Now click on _Include Directories_ click on _<Edit...>_ and add the include which is also located in this repositorie's **opengl** > **All Config Files** folder.
+7. Also click on _Library Directories_ click on _<Edit...>_ and add the lib which is also located in this repositorie's **opengl** > **All Config Files** folder.
+9. Now close the _Lab9_Lighting Properties Pages_ window & right click on **Source Files** folder and click on _Add_ then _Existing Item..._
+10. Then add the **glad.c** file which is also located in this repositorie's **All Config Files** folder.
+11. Now _build_ and run the solution on your _Visual Studio_ & enjoy!
