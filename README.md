@@ -64,7 +64,7 @@ Ensure the following are installed on your system:
 1. Clone this repository:
    ```bash
    git clone https://github.com/Shariar-Rafi/OpenGL-Project-Common-Room
-2. Open ****Main Project**** folder
+2. Open **Main Project** folder
 3. Double click on **Lab9_Lighting.sln** file & open with Visual Studio
 4. Right click on **Lab9_Lighting** & go to _Properties_
 5. Go to _VC++ Directories_
