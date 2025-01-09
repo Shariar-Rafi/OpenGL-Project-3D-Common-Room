@@ -1,26 +1,26 @@
 ﻿  main.cpp
-C:\Users\USER\Desktop\OpenGL-Project-Common-Room\Main Project\sphere.h(97,29): warning C4305: 'argument': truncation from 'double' to 'T'
-C:\Users\USER\Desktop\OpenGL-Project-Common-Room\Main Project\sphere.h(97,29): warning C4305:         with
-C:\Users\USER\Desktop\OpenGL-Project-Common-Room\Main Project\sphere.h(97,29): warning C4305:         [
-C:\Users\USER\Desktop\OpenGL-Project-Common-Room\Main Project\sphere.h(97,29): warning C4305:             T=float
-C:\Users\USER\Desktop\OpenGL-Project-Common-Room\Main Project\sphere.h(97,29): warning C4305:         ]
+C:\Users\Rafi\Desktop\OpenGL-Project-Common-Room\Main Project\sphere.h(97,29): warning C4305: 'argument': truncation from 'double' to 'T'
+C:\Users\Rafi\Desktop\OpenGL-Project-Common-Room\Main Project\sphere.h(97,29): warning C4305:         with
+C:\Users\Rafi\Desktop\OpenGL-Project-Common-Room\Main Project\sphere.h(97,29): warning C4305:         [
+C:\Users\Rafi\Desktop\OpenGL-Project-Common-Room\Main Project\sphere.h(97,29): warning C4305:             T=float
+C:\Users\Rafi\Desktop\OpenGL-Project-Common-Room\Main Project\sphere.h(97,29): warning C4305:         ]
   (compiling source file 'main.cpp')
   
-C:\Users\USER\Desktop\OpenGL-Project-Common-Room\Main Project\sphere.h(98,30): warning C4305: 'argument': truncation from 'double' to 'T'
-C:\Users\USER\Desktop\OpenGL-Project-Common-Room\Main Project\sphere.h(98,30): warning C4305:         with
-C:\Users\USER\Desktop\OpenGL-Project-Common-Room\Main Project\sphere.h(98,30): warning C4305:         [
-C:\Users\USER\Desktop\OpenGL-Project-Common-Room\Main Project\sphere.h(98,30): warning C4305:             T=float
-C:\Users\USER\Desktop\OpenGL-Project-Common-Room\Main Project\sphere.h(98,30): warning C4305:         ]
+C:\Users\Rafi\Desktop\OpenGL-Project-Common-Room\Main Project\sphere.h(98,30): warning C4305: 'argument': truncation from 'double' to 'T'
+C:\Users\Rafi\Desktop\OpenGL-Project-Common-Room\Main Project\sphere.h(98,30): warning C4305:         with
+C:\Users\Rafi\Desktop\OpenGL-Project-Common-Room\Main Project\sphere.h(98,30): warning C4305:         [
+C:\Users\Rafi\Desktop\OpenGL-Project-Common-Room\Main Project\sphere.h(98,30): warning C4305:             T=float
+C:\Users\Rafi\Desktop\OpenGL-Project-Common-Room\Main Project\sphere.h(98,30): warning C4305:         ]
   (compiling source file 'main.cpp')
   
-C:\Users\USER\Desktop\OpenGL-Project-Common-Room\Main Project\sphere.h(184,26): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\Rafi\Desktop\OpenGL-Project-Common-Room\Main Project\sphere.h(184,26): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
   (compiling source file 'main.cpp')
   
-C:\Users\USER\Desktop\OpenGL-Project-Common-Room\Main Project\sphere.h(185,25): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\Rafi\Desktop\OpenGL-Project-Common-Room\Main Project\sphere.h(185,25): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
   (compiling source file 'main.cpp')
   
-C:\Users\USER\Desktop\OpenGL-Project-Common-Room\Main Project\sphere.h(187,26): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\Rafi\Desktop\OpenGL-Project-Common-Room\Main Project\sphere.h(187,26): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
   (compiling source file 'main.cpp')
   
-C:\Users\USER\Desktop\OpenGL-Project-Common-Room\Main Project\main.cpp(21,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
-  Lab9_Lighting.vcxproj -> C:\Users\USER\Desktop\OpenGL-Project-Common-Room\Main Project\x64\Debug\Lab9_Lighting.exe
+C:\Users\Rafi\Desktop\OpenGL-Project-Common-Room\Main Project\main.cpp(23,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  Lab9_Lighting.vcxproj -> C:\Users\Rafi\Desktop\OpenGL-Project-Common-Room\Main Project\x64\Debug\Lab9_Lighting.exe

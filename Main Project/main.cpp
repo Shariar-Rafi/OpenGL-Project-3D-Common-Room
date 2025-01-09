@@ -1,9 +1,11 @@
 // main.cpp
 // 3D Common Room
+ 
 // Designed by:
-// Md Raduan Kabir (20201045) 
-// Sheikh Nafis Ul Alam(20201056)
-// Md Monem Shariar Rafi (20201058)
+// Md Monem Shariar Rafi
+// Sheikh Nafis Ul Alam
+// Md Raduan Kabir
+
 
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
@@ -33,7 +35,7 @@ void bed(unsigned int& cubeVAO, Shader& lightingShader, glm::mat4 alTogether);
 
 
 // settings
-const unsigned int SCR_WIDTH = 1400;
+const unsigned int SCR_WIDTH = 1300;
 const unsigned int SCR_HEIGHT = 800;
 
 // modelling transform
@@ -146,7 +148,7 @@ int main()
 
     // glfw window creation
     // --------------------
-    GLFWwindow* window = glfwCreateWindow(SCR_WIDTH, SCR_HEIGHT, "Titans - Common Room", NULL, NULL);
+    GLFWwindow* window = glfwCreateWindow(SCR_WIDTH, SCR_HEIGHT, "3D Common Room", NULL, NULL);
     if (window == NULL)
     {
         std::cout << "Failed to create GLFW window" << std::endl;
