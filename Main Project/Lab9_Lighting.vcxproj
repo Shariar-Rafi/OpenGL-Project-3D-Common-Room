@@ -71,8 +71,8 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <IncludePath>C:\Users\Rafi\Desktop\OpenGL-Project-Common-Room\All Config Files\opengl\include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Users\Rafi\Desktop\OpenGL-Project-Common-Room\All Config Files\opengl\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(IncludePath)</IncludePath>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -132,7 +132,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\All Config Files\opengl\glad.c" />
     <ClCompile Include="directionalLight.h" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
