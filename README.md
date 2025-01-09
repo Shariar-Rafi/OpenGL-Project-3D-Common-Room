@@ -10,7 +10,7 @@ This project is a practical demonstration of 3D graphics programming, highlighti
 - Properly scaled and positioned 3D objects like tables, chairs, and walls etc.
 
 
-## **Designed By**
+## **Created By**
 - <a href="https://github.com/Shariar-Rafi">Md Monem Shariar Rafi<a/>
 - <a href="https://github.com/Sheikh-Nafis">Sheikh Nafis Ul Alam<a/>
 - <a href="https://github.com/RKNayeem">Md Raduan Kabir<a/>
