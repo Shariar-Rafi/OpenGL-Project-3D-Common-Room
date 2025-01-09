@@ -1,4 +1,4 @@
-# OpenGL-Project-Common-Room
+# OpenGL-Project-3D-Common-Room
 
 ## **Overview**
 
